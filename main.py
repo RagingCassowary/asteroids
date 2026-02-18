@@ -1,10 +1,10 @@
 import pygame
-from constants.py import *
+from constants import *
 def main():
     print(f"Starting Asteroids with pygame version: {pygame.version.ver}")
     print(f"Screen width: {SCREEN_WIDTH}\n"
           +
-          "Screen_height: {SCREEN_HEIGHT}"
+          f"Screen_height: {SCREEN_HEIGHT}"
           )
 
 
