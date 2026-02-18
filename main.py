@@ -4,7 +4,7 @@ def main():
     print(f"Starting Asteroids with pygame version: {pygame.version.ver}")
     print(f"Screen width: {SCREEN_WIDTH}\n"
           +
-          f"Screen_height: {SCREEN_HEIGHT}"
+          f"Screen height: {SCREEN_HEIGHT}"
           )
 
 
