@@ -17,7 +17,7 @@ def main():
         for event in pygame.event.get():
             pass
         screen.fill("black")
-        display.flip()
+        pygame.display.flip()
 
 
 if __name__ == "__main__":
