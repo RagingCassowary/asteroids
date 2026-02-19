@@ -1,7 +1,7 @@
 import pygame
 from constants import *
 from logger import log_state
-from player import Player
+from player import *
 
 def main():
     print(f"Starting Asteroids with pygame version: {pygame.version.ver}")
