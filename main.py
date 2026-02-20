@@ -2,7 +2,7 @@ import pygame
 from constants import *
 from logger import log_state
 from player import *
-from asteroids import Asteroid
+from asteroid import Asteroid
 from asteroidfield import AsteroidField
 
 def main():
