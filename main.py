@@ -32,6 +32,7 @@ def main():
     player = Player((SCREEN_WIDTH / 2), (SCREEN_HEIGHT / 2))
     asteroid_field = AsteroidField()
     score = 0
+    score_timer = 0
 
     while True:
         log_state()
@@ -45,7 +46,7 @@ def main():
             for shot in shots:
                 if asteroid.collides_with(shot) == True:
                     log_event("asteroid_shot")
-                    score += 100
+                    score += 1000
                     asteroid.split()
                     shot.kill()
             if asteroid.collides_with(player) == True:
@@ -56,9 +57,12 @@ def main():
         for image in drawable:  
             image.draw(screen)
         pygame.display.flip()
+        if score_timer == 60:
+            score += 100
+            score_timer = 0
+        score_timer += 1
         Clock.tick(60)
         dt = (Clock.tick(60) * 0.001)
-        score += 10
 
 
 if __name__ == "__main__":
